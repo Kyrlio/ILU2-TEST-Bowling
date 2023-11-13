@@ -5,7 +5,6 @@ public class Game {
 
 	public void roll(int n) {
 		score += n;
-		score();
 	}
 
 	public Integer score() {

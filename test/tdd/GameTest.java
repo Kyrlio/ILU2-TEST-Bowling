@@ -33,5 +33,17 @@ class GameTest {
 		}
 		assertEquals(20, game.score());
 	}
+	
+	@Test
+	void test_10_unEtDeux() {
+		for (int i = 0; i < 10; i++) {
+			game.roll(1);
+		}
+		assertEquals(10, game.score());
+		for (int i = 0; i < 10; i++) {
+			game.roll(2);
+		}
+		assertEquals(30, game.score());
+	}
 
 }
